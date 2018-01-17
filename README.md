@@ -13,7 +13,7 @@
 
 动画设置进度
 
-`progressView2.setProgressWithAnimation(0.6, rate: 1)`
+`progressView.setProgressWithAnimation(0.6, rate: 1)`
 
 设置起点和终点
 ````
