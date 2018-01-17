@@ -11,5 +11,4 @@
 
 ````
 自定义背景色
-·        progressView2.setProgressWithAnimation(0.6, rate: 1)
-·
+`progressView2.setProgressWithAnimation(0.6, rate: 1)`
