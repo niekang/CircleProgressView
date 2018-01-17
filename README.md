@@ -9,20 +9,29 @@
 
 设置进度
 
-`        progressView.progress = 0.3
-`
+`progressView.progress = 0.3`
 
-设置起点和终点
-````
-        progressView.startAngle = CGFloat(Double.pi * 0.25 + Double.pi * 0.5)
-        progressView.endAngle = CGFloat(Double.pi * 0.25 )
-````
-设置背景色
+动画设置进度
 
 `progressView2.setProgressWithAnimation(0.6, rate: 1)`
 
+设置起点和终点
+````
+progressView.startAngle = CGFloat(Double.pi * 0.25 + Double.pi * 0.5)
+progressView.endAngle = CGFloat(Double.pi * 0.25 )        
+````
+设置背景色
+
+`progressView.setProgressWithAnimation(0.6, rate: 1)`
+
 设置进度颜色
 
-`progressView3.progressColor = UIColor.green`
+`progressView.progressColor = UIColor.green`
+
+设置端点样式
+
+`progressView.lineCapStyle = .round`
+
+
 
 
