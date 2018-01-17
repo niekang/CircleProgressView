@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CircleProgressView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NyP-rI-86F"/>
+                        <viewControllerLayoutGuide type="bottom" id="hbg-61-8S5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYu-Dj-9py" customClass="CircleProgressView" customModule="CircleProgressView" customModuleProvider="target">
+                                <rect key="frame" x="137" y="50" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="KAr-RL-D4l"/>
+                                    <constraint firstAttribute="height" constant="100" id="tXy-8A-WFT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mIz-ve-xZX" customClass="CircleProgressView" customModule="CircleProgressView" customModuleProvider="target">
+                                <rect key="frame" x="137" y="180" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhG-U8-VGy" customClass="CircleProgressView" customModule="CircleProgressView" customModuleProvider="target">
+                                <rect key="frame" x="137" y="310" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rhG-U8-VGy" firstAttribute="width" secondItem="mIz-ve-xZX" secondAttribute="width" id="0Bs-rn-Axd"/>
+                            <constraint firstItem="mIz-ve-xZX" firstAttribute="top" secondItem="JYu-Dj-9py" secondAttribute="bottom" constant="30" id="9V6-rx-ffL"/>
+                            <constraint firstItem="JYu-Dj-9py" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FUj-tO-aO0"/>
+                            <constraint firstItem="JYu-Dj-9py" firstAttribute="top" secondItem="NyP-rI-86F" secondAttribute="bottom" constant="30" id="Nqo-1S-Tip"/>
+                            <constraint firstItem="mIz-ve-xZX" firstAttribute="width" secondItem="JYu-Dj-9py" secondAttribute="width" id="Upg-PY-wOL"/>
+                            <constraint firstItem="mIz-ve-xZX" firstAttribute="height" secondItem="JYu-Dj-9py" secondAttribute="height" id="Vfk-ns-pdD"/>
+                            <constraint firstItem="rhG-U8-VGy" firstAttribute="top" secondItem="mIz-ve-xZX" secondAttribute="bottom" constant="30" id="Whl-us-bS1"/>
+                            <constraint firstItem="rhG-U8-VGy" firstAttribute="centerX" secondItem="mIz-ve-xZX" secondAttribute="centerX" id="pOK-jX-b0G"/>
+                            <constraint firstItem="rhG-U8-VGy" firstAttribute="height" secondItem="mIz-ve-xZX" secondAttribute="height" id="s2J-op-OPN"/>
+                            <constraint firstItem="mIz-ve-xZX" firstAttribute="centerX" secondItem="JYu-Dj-9py" secondAttribute="centerX" id="tkg-zt-W7F"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressView1" destination="JYu-Dj-9py" id="50q-gZ-IcU"/>
+                        <outlet property="progressView2" destination="mIz-ve-xZX" id="Mm8-Sf-VeJ"/>
+                        <outlet property="progressView3" destination="rhG-U8-VGy" id="KwI-oO-R4L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="71.514242878560722"/>
+        </scene>
+    </scenes>
+</document>
